@@ -41,4 +41,5 @@ Path | Method | Description | Request Body
 /check-in/:{flightID} | POST | Check-in Flights | {first_name: String, last_name: String, age: String, gender: String}
 /flights/:{flightID} | GET | Get flights Seats, Occupied and Avaible | 
 /passengers/:{flightID} | GET | Get passengers list |
-/aircrafts-info/:{flightID} | GET | Get Aircraft Info |
+/aircrafts-info/:{flightID} | GET | Get Aircraft Info based on Flights |
+/specific-aircraft-info/:{planeID} | GET | Get Specific Aircraft Info |
