@@ -70,7 +70,18 @@ const getPassengers = async (flight) => {
 const getAircraft = async (flight) => {
   return new Promise((resolve, reject) => {
     db.query(
-      `SELECT cpn.carrier_name, cpn.head_quarters, pln.brand, pln.model  FROM assign JOIN airplane as pln ON pln.arplane_id = assign.plane JOIN companies as cpn ON pln.company_id = cpn.company_id WHERE assign.flight_no = ${flight}`,
+      `SELECT cpn.carrier_name, cpn.head_quarters, pln.brand, pln.model  FROM assign JOIN airplane as pln ON pln.airplane_id = assign.plane JOIN companies as cpn ON pln.company_id = cpn.company_id WHERE assign.flight_no = ${flight}`,
+      function (err, result, fields) {
+        if (err) reject(err);
+        resolve(result);
+      }
+    );
+  });
+};
+const getSpecificAircraft = async (plane) => {
+  return new Promise((resolve, reject) => {
+    db.query(
+      `SELECT pln.brand, pln.model, cpn.carrier_name, cpn.head_quarters FROM airplane as pln JOIN companies as cpn ON cpn.company_id = pln.company_id WHERE pln.airplane_id = ${plane} `,
       function (err, result, fields) {
         if (err) reject(err);
         resolve(result);
@@ -85,4 +96,5 @@ module.exports = {
   getFlights,
   getPassengers,
   getAircraft,
+  getSpecificAircraft,
 };

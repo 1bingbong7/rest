@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 14, 2021 at 04:26 AM
+-- Generation Time: May 14, 2021 at 04:38 AM
 -- Server version: 5.7.32
 -- PHP Version: 7.4.12
 
@@ -21,7 +21,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `airplane` (
-  `arplane_id` int(11) NOT NULL,
+  `airplane_id` int(11) NOT NULL,
   `brand` varchar(255) NOT NULL,
   `model` varchar(255) NOT NULL,
   `company_id` int(11) NOT NULL
@@ -31,7 +31,7 @@ CREATE TABLE `airplane` (
 -- Dumping data for table `airplane`
 --
 
-INSERT INTO `airplane` (`arplane_id`, `brand`, `model`, `company_id`) VALUES
+INSERT INTO `airplane` (`airplane_id`, `brand`, `model`, `company_id`) VALUES
 (1, 'Boeing', '737-800', 1),
 (2, 'Airbus', 'A380', 1),
 (3, 'Dash', '8', 1),
@@ -166,7 +166,7 @@ INSERT INTO `flights` (`flight_no`, `airline_company`, `date_time`) VALUES
 -- Indexes for table `airplane`
 --
 ALTER TABLE `airplane`
-  ADD PRIMARY KEY (`arplane_id`);
+  ADD PRIMARY KEY (`airplane_id`);
 
 --
 -- Indexes for table `airplane_configuration`
@@ -206,7 +206,7 @@ ALTER TABLE `flights`
 -- AUTO_INCREMENT for table `airplane`
 --
 ALTER TABLE `airplane`
-  MODIFY `arplane_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `airplane_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `airplane_configuration`
