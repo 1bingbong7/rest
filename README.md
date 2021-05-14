@@ -24,7 +24,7 @@ nodemon server
 ```
 
 ### Initial Details of Variable in Paramenters or Request Body of Implemented endpoints:
-Variable | Description | Default Value
+Variable | Description | Default ID Value
 ---|---|---
 companyID | This is autocrimented ID of Airline Companies | 1 = Qantas, 2 = Singapore, 3 = Emirates
 flightID | This is autocrimented ID of Created Flights |
