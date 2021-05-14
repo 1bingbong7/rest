@@ -28,7 +28,7 @@ Variable | Description | Default Value
 ---|---|---
 companyID | This is autocrimented ID of Airline Companies | 1 = Qantas, 2 = Singapore, 3 = Emirates
 flightID | This is autocrimented ID of Created Flights |
-planeID | This is autocrimented ID of Aircraft/Plane based on the Companies | Qantas(1 = Boeing, 2 = Airbus, 3 = Dash), Singapore(4 = Boeing, 5 = Airbus, 6 = Dash), Emirates(7 = Boeing, 8 = Airbus, 9 = Dash)
+planeID | This is autocrimented ID of Aircraft/Plane based on the Airline Companies | Qantas(1 = Boeing, 2 = Airbus, 3 = Dash), Singapore(4 = Boeing, 5 = Airbus, 6 = Dash), Emirates(7 = Boeing, 8 = Airbus, 9 = Dash)
 
 
 ### Implemented endpoints:
