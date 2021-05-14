@@ -23,7 +23,7 @@ cd /config
 nodemon server
 ```
 
-###Initial Details of Variable in Paramenters or Request Body of Implemented endpoints:
+### Initial Details of Variable in Paramenters or Request Body of Implemented endpoints:
 Variable | Description | Default Value
 ---|---|---
 companyID | This is autocrimented ID of Airline Companies | 1 = Qantas, 2 = Singapore, 3 = Emirates
